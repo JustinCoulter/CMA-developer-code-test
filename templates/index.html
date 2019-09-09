@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script type="text/javascript" filename="CMA_json.json"></script> -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>CMA ARTWORKS</title>
+  </head>
+
+
+  <body>
+      <nav class="navbar navbar-light" style="background-color: rgb(163, 229, 253)">
+          <a class="navbar-brand font-size: larger" href="#">
+            <img src="../static/images/CMA_logo.gif" height="100px" class="d-inline-block align-top" alt="">
+            <span class="mb-02 pl-2 h1">CMA ARTWORKS</span>
+          </a>
+        </nav>
+        <!-- Set body background to light gray -->
+    <style type="text/css">
+      body { background: #ededed !important; }
+    </style> 
+    <div class ="container-fluid ">
+  
+    <div class="row px-2">
+      <div class="col-md-12">
+        <div class="well">
+          <br>
+          <h5>Select Artwork:</h5>
+          <select id="selArtwork" onchange="optionChanged(this.value)"></select>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="row px-2">
+      <div class="col-md-6 " id="art-image" alt="Responsive image">
+          <!-- <img src="../static/images/1928.35_reduced.jpg" class="img-fluid" alt=""/>    -->
+      </div>
+      <div class="col-md-6" id="art-info">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Artwork Info</h3>
+            </div>
+            <div id="art-info" class="panel-body"></div>
+        </div>
+    </div>
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/cma.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  </body>
+</html>
