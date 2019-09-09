@@ -60,21 +60,7 @@ CMA_new = json.loads(j)
 with open('CMA_jjjj.json', 'w') as outfile:
     json.dump(CMA_new, outfile)
 
-# # Create a list of accession numbers
-# accession_list =[]
-# for i in CMA_new:
-#     accession_list.append(i['accession_number'])
 
-# # Create a list of department names
-# department_list =[]
-# for i in CMA_new:
-#     department_list.append(i['department_name'])
-# department_list = list(np.unique(department_list))
-
-# # Create a list of artwork id's
-# artwork_id_list = []
-# for i in CMA_new:
-#     artwork_id_list.append(i['artwork_id'])
 
 
 #################################################
