@@ -4,7 +4,7 @@ function init() {
   var select = document.getElementById("selArtwork");
   var options = [];
   for (var i = 0; i < cmaJ.length; i++){
-      options.push(cmaJ[i].artwork_id);
+    options.push(cmaJ[i].artwork_id);
   }
 
 

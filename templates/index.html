@@ -7,47 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <script type="text/javascript" filename="CMA_json.json"></script> -->
+
     <link rel="stylesheet" href="../static/css/style.css">
 
     <title>CMA ARTWORKS</title>
+
   </head>
 
-
   <body>
+    <!-- simple navbar/ logo  -->
       <nav class="navbar navbar-light" style="background-color: rgb(163, 229, 253)">
           <a class="navbar-brand font-size: larger" href="#">
             <img src="../static/images/CMA_logo.gif" height="100px" class="d-inline-block align-top" alt="">
-            <span class="mb-02 pl-2 h1">CMA ARTWORKS</span>
+            <span class="mb-02 pl-2 h1" style="font-family:verdana; font-weight:bolder;">CMA ARTWORKS</span>
           </a>
         </nav>
         <!-- Set body background to light gray -->
     <style type="text/css">
       body { background: #ededed !important; }
     </style> 
+
     <div class ="container-fluid ">
   
-    <div class="row px-2">
-      <div class="col-md-12">
-        <div class="well">
-          <br>
-          <h5>Select Artwork:</h5>
-          <select id="selArtwork" onchange="optionChanged(this.value)"></select>
-          <p></p>
+      <div class="row px-2">
+        <div class="col-md-12">
+          <div class="well">
+            <br>
+            <h5 style="font-family:verdana; font-weight:bold;">Select Artwork:</h5>
+            <select id="selArtwork" onchange="optionChanged(this.value)"></select>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row px-2">
-      <div class="col-md-6 " id="art-image" alt="Responsive image">
-          <!-- <img src="../static/images/1928.35_reduced.jpg" class="img-fluid" alt=""/>    -->
-      </div>
-      <div class="col-md-6" id="art-info">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Artwork Info</h3>
-            </div>
-            <div id="art-info" class="panel-body"></div>
+      <div class="row px-2">
+        <div class="col-md-6 " id="art-image" alt="Responsive image"> 
         </div>
+        <div class="col-md-6" id="art-info">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                <!-- <h3 class="panel-title" style="font-family:verdana; font-style:normal">Artwork Info</h3> -->
+              </div>
+              <div id="art-info" class="panel-body"></div>
+              
+          </div>
+        </div>
+      </div>
     </div>
         
 

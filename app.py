@@ -60,21 +60,21 @@ CMA_new = json.loads(j)
 with open('CMA_jjjj.json', 'w') as outfile:
     json.dump(CMA_new, outfile)
 
-# Create a list of accession numbers
-accession_list =[]
-for i in CMA_new:
-    accession_list.append(i['accession_number'])
+# # Create a list of accession numbers
+# accession_list =[]
+# for i in CMA_new:
+#     accession_list.append(i['accession_number'])
 
-# Create a list of department names
-department_list =[]
-for i in CMA_new:
-    department_list.append(i['department_name'])
-department_list = list(np.unique(department_list))
+# # Create a list of department names
+# department_list =[]
+# for i in CMA_new:
+#     department_list.append(i['department_name'])
+# department_list = list(np.unique(department_list))
 
-# Create a list of artwork id's
-artwork_id_list = []
-for i in CMA_new:
-    artwork_id_list.append(i['artwork_id'])
+# # Create a list of artwork id's
+# artwork_id_list = []
+# for i in CMA_new:
+#     artwork_id_list.append(i['artwork_id'])
 
 
 #################################################
@@ -86,26 +86,6 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
-
-# @app.route("/artwork_id")
-# def artwork_id_f():
-#     """Return list of Artwork id's"""
-#     return artwork_id_list 
-
-# @app.route("/artwork_info/<art_selection>")
-# def artwork_info(art_selection):
-#     console.log("at art selection")
-#     """Return selected Artwork info"""
-#     for i in CMA_new:
-#       if i['artwork_id'] == art_selection:
-#           print('Artwork Title: ',i['title'],flush=true)
-#           print('Department: ',i['department_name'],flush=true)
-#           for f in range(len(i['creator_info'])):
-#               print(i['creator_info'][f]['role'],': ',i['creator_info'][f]['description'],flush=true)
-#   #             print(i['creator_info'][f]['description'])
-#           break
-
-#     return artwork_info 
 
 
 if __name__ == "__main__":
