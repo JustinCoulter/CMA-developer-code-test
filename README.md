@@ -1,4 +1,4 @@
-![1-Logo](static/images/2019-09-09 00.40.20.gif)
+![app giff](static/images/2019-09-09 00.40.20.gif)
 
 # CMA Developer Code Test
 
