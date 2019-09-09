@@ -31,21 +31,23 @@
   
       <div class="row px-2">
         <div class="col-md-12">
+          <!-- Create drop down menu populated from JSON file -->
           <div class="well">
             <br>
-            <h5 style="font-family:verdana; font-weight:bold;">Select Artwork:</h5>
+            <h6 style="font-family:verdana; font-weight:bold;">Select Artwork by ID:</h6>
             <select id="selArtwork" onchange="optionChanged(this.value)"></select>
             <p></p>
           </div>
         </div>
       </div>
       <div class="row px-2">
+        <!-- Insert selected image based on Artwork ID -->
         <div class="col-md-6 " id="art-image" alt="Responsive image"> 
         </div>
+        <!-- Populate panel with relative artwork creation info -->
         <div class="col-md-6" id="art-info">
           <div class="panel panel-primary">
               <div class="panel-heading">
-                <!-- <h3 class="panel-title" style="font-family:verdana; font-style:normal">Artwork Info</h3> -->
               </div>
               <div id="art-info" class="panel-body"></div>
               
